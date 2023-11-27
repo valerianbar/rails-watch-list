@@ -9,6 +9,8 @@ gem "rails", "~> 7.1.2"
 gem "sprockets-rails"
 
 # Use postgresql as the database for Active Record
+
+gem "cloudinary"
 gem "dotenv-rails"
 gem "pg", "~> 1.1"
 gem "bootstrap", "~> 5.2"

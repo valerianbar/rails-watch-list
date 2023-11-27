@@ -1,8 +1,12 @@
 <h1>list</h1>
-<div class = "container">
-<ul>
+
 <% @list.each do |list| %>
-<li><%= list.name %></li>
+  <div class="card-product">
+      <% if list.photo.attached? %>
+      <%= cl_image_tag list.photo.key, height: 300, width: 400, crop: :fill %>
+      <% end %>
+    <div class="card-product-infos">
+      <%= list.name %>
+    </div>
+  </div>
 <% end %>
-</ul>
-</div>
